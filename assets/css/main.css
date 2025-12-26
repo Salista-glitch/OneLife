@@ -883,7 +883,7 @@ section,
   background-image: url("/assets/img/2\ \(1\).jpg");
    background-repeat: no-repeat;
    background-position: right center;
-  background-size: auto 100%;
+  background-size: cover;
   width: 100%;
   min-height: 90vh;
   position: relative;
