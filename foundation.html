@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>One Life Batanai Foundation</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/OL-icon.JPG" rel="icon">
+  <link href="assets/img/OL-icon.JPG" rel="one-life-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: eNno
+  * Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+      <style>
+      /* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodyx {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #2c2c2c;
+    background-color: #faf8f5;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.containerX {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.section-labelX {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #b50635;
+    margin-bottom: 1rem;
+}
+
+.section-titleX {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.section-subtitleX {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+/* Hero Section */
+.heroX {
+    padding: 80px 0 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-contentX {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-titleX {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.hero-subtitleX {
+    font-size: 1.125rem;
+    color: #555;
+    margin-bottom: 2rem;
+    max-width: 450px;
+}
+
+.cta-buttonX {
+    background-color: #b50635;
+    color: #fff;
+    padding: 14px 32px;
+    border: none;
+   
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-buttonX:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+/* Hero Visual */
+.hero-visualX {
+    position: relative;
+    height: 500px;
+}
+
+.africa-shapeX {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 600px;
+    clip-path: polygon(50% 0%, 65% 15%, 80% 20%, 90% 35%, 95% 50%, 92% 65%, 85% 80%, 70% 92%, 50% 98%, 30% 92%, 15% 80%, 8% 65%, 5% 50%, 10% 35%, 20% 20%, 35% 15%);
+}
+
+.africa-shapeX img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.dotX {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.dot-1X { background-color: #D4A574; top: 10%; left: 5%; }
+.dot-2X { background-color: #E8B87D; top: 30%; right: 10%; width: 16px; height: 16px; }
+.dot-3X { background-color: #C9A86A; bottom: 20%; left: 15%; width: 14px; height: 14px; }
+.dot-4X { background-color: #F5D5A8; bottom: 35%; right: 5%; width: 18px; height: 18px; }
+.dot-5X { background-color: #D4A574; top: 25%; left: 8%; width: 12px; height: 12px; }
+.dot-6X { background-color: #E8B87D; bottom: 15%; right: 12%; }
+
+/* Values Section */
+.valuesX {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.values-gridX {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.value-cardX {
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.value-cardX:hover {
+    transform: translateY(-5px);
+}
+
+.value-iconX {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.value-titleX {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.value-descriptionX {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Stories Section */
+.storiesX {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.stories-contentX {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.stories-visualX {
+    position: relative;
+    height: 500px;
+}
+
+.story-image-mainX {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.story-image-mainX img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-image-smallX {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #faf8f5;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.story-image-smallX img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-image-1X {
+    top: 15%;
+    right: 10%;
+}
+
+.story-image-2X {
+    bottom: 15%;
+    left: 5%;
+}
+
+.dots-patternX {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 5%;
+    left: 10%;
+    background-image: radial-gradient(circle, #D4A574 2px, transparent 2px);
+    background-size: 15px 15px;
+    opacity: 0.3;
+}
+
+.stories-textX {
+    text-align: left;
+}
+
+.stories-descriptionX {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.stories-actionsX {
+    display: flex;
+    gap: 20px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.cta-button-secondaryX {
+    background-color: transparent;
+    color: #1a1a1a;
+    padding: 14px 32px;
+    border: 2px solid #1a1a1a;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.cta-button-secondaryX:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.play-iconX {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    font-size: 0.7rem;
+}
+
+/* Featured Section */
+.featuredX {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.featured-gridX {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.featured-cardX {
+    background-color: #faf8f5;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.featured-cardX:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.featured-imageX {
+    height: 280px;
+    overflow: hidden;
+}
+
+.featured-imageX img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.featured-cardX:hover .featured-imageX img {
+    transform: scale(1.05);
+}
+
+.featured-contentX {
+    padding: 30px;
+}
+
+.featured-titleX {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.featured-excerptX {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.read-moreX {
+    color: #b50635;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.read-moreX:hover {
+    color: #C9A86A;
+}
+
+/* Community Section */
+.communityX {
+    padding: 100px 0;
+}
+
+.community-contentX {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.community-descriptionX {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+}
+
+.community-statsX {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.statX {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stat-iconX {
+    font-size: 3rem;
+}
+
+.stat-numberX {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1;
+}
+
+.stat-labelX {
+    font-size: 1rem;
+    color: #666;
+    font-family: 'Arial', sans-serif;
+}
+
+.community-visualX {
+    position: relative;
+    height: 400px;
+}
+
+.africa-mapX {
+    width: 100%;
+    height: 100%;
+}
+
+.dots-pattern-2X {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    bottom: 10%;
+    right: -10%;
+    background-image: radial-gradient(circle, #D4A574 2px, transparent 2px);
+    background-size: 15px 15px;
+    opacity: 0.3;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .hero-contentX,
+    .stories-contentX,
+    .community-contentX {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .hero-titleX {
+        font-size: 3rem;
+    }
+
+    .section-titleX {
+        font-size: 2rem;
+    }
+
+    .hero-visualX,
+    .stories-visualX {
+        height: 400px;
+    }
+
+    .africa-shapeX {
+        width: 320px;
+        height: 400px;
+    }
+
+    .story-image-mainX {
+        width: 280px;
+        height: 280px;
+    }
+
+    .story-image-smallX {
+        width: 100px;
+        height: 100px;
+    }
+
+    .featured-gridX {
+        grid-template-columns: 1fr;
+    }
+
+    .stories-actionsX {
+        flex-direction: column;
+    }
+
+    .cta-button-secondaryX {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .heroX {
+        padding: 40px 0 60px;
+    }
+
+    .hero-titleX {
+        font-size: 2.5rem;
+    }
+
+    .section-titleX {
+        font-size: 1.8rem;
+    }
+
+    .valuesX,
+    .storiesX,
+    .featuredX,
+    .communityX {
+        padding: 60px 0;
+    }
+
+    .values-gridX {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-visualX,
+    .stories-visualX,
+    .community-visualX {
+        height: 350px;
+    }
+
+    .africa-shapeX {
+        width: 280px;
+        height: 350px;
+    }
+
+    .story-image-mainX {
+        width: 240px;
+        height: 240px;
+    }
+
+    .story-image-smallX {
+        width: 80px;
+        height: 80px;
+    }
+
+    .cta-buttonX,
+    .cta-button-secondaryX {
+        width: 100%;
+        justify-content: center;
+    }
+}
+    </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top" style="background-image: url('/assets/img/header-landing.PNG');">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center ">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/onelifeicon-removebg-preview.png" alt=""> 
+       <!--- <h1 class="sitename">One life </h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" >About</a></li>
+          <li><a href="podcast.html" >Podcast</a></li>
+          <li><a href="foundation.html" class="active">Foundation</a></li>
+
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="bodyx">
+
+     <!-- Hero Section -->
+    <section class="heroX">
+        <div class="containerX">
+            <div class="hero-contentX">
+                <div class="hero-textX">
+                    <h1 class="hero-titleX">One life<br>lived with<br>intention</h1>
+                    <p class="hero-subtitleX">A digital home for African stories that explore meaning, growth, and the quiet strength of purposeful living.</p>
+                    <button class="cta-buttonX">Explore Stories</button>
+                </div>
+                <div class="hero-visualX">
+                    <div class="africa-shapeX ">
+                        <img src="/assets/img/found2.png" alt="African stories" >
+                    </div>
+                    <span class="dotX dot-1X"></span>
+                    <span class="dotX dot-2X"></span>
+                    <span class="dotX dot-3X"></span>
+                    <span class="dotX dot-4X"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="valuesX">
+        <div class="containerX">
+            <p class="section-labelX">What We Offer</p>
+            <h2 class="section-titleX">A Space for Reflection</h2>
+            <p class="section-subtitleX">Through conversations and real-life experiences, we explore what it means to live intentionally in an African context.</p>
+            
+            <div class="values-gridX">
+                <div class="value-cardX">
+                    <div class="value-iconX">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="28" stroke="#b50635" stroke-width="2"/>
+                            <path d="M30 15v30M15 30h30" stroke="#D4A574" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-titleX">Authentic Stories</h3>
+                    <p class="value-descriptionX">Real conversations and experiences from African voices sharing their journeys of growth and purpose.</p>
+                </div>
+
+                <div class="value-cardX">
+                    <div class="value-iconX">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <path d="M30 10L35 25H50L38 35L43 50L30 40L17 50L22 35L10 25H25L30 10Z" stroke="#b50635" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-titleX">Meaningful Connection</h3>
+                    <p class="value-descriptionX">A community built on listening, reflecting, and connecting with the deeper questions of life.</p>
+                </div>
+
+                <div class="value-cardX">
+                    <div class="value-iconX">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect x="15" y="20" width="30" height="25" rx="2" stroke="#b50635" stroke-width="2"/>
+                            <path d="M20 20V15C20 12 22 10 25 10H35C38 10 40 12 40 15V20" stroke="#b50635" stroke-width="2"/>
+                            <circle cx="30" cy="32" r="4" fill="#b50635"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-titleX">Wisdom & Growth</h3>
+                    <p class="value-descriptionX">Insights and reflections that honor struggle while celebrating the beauty of intentional growth.</p>
+                </div>
+
+                <div class="value-cardX">
+                    <div class="value-iconX">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <path d="M30 15L35 28L48 30L38 38L42 51L30 43L18 51L22 38L12 30L25 28L30 15Z" fill="#b50635"/>
+                        </svg>
+                    </div>
+                    <h3 class="value-titleX">Ubuntu Spirit</h3>
+                    <p class="value-descriptionX">Embracing the African philosophy that we are who we are through others — building collective purpose.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section class="storiesX">
+        <div class="containerX">
+            <div class="stories-contentX">
+                <div class="stories-visualX">
+                    <div class="story-image-mainX">
+                        <img src="/assets/img/leaf2.png" alt="Reflection">
+                    </div>
+                    <div class="story-image-smallX story-image-1X">
+                        <img src="/assets/img/bug2.PNG" alt="Wisdom">
+                    </div>
+                    <div class="story-image-smallX story-image-2X">
+                        <img src="/assets/img/bug1.PNG" alt="Hope">
+                    </div>
+                    <span class="dotX dot-5X"></span>
+                    <span class="dotX dot-6X"></span>
+                    <div class="dots-patternX"></div>
+                </div>
+
+                <div class="stories-textX">
+                    <p class="section-labelX">About Us</p>
+                    <h2 class="section-titleX">Living with<br>Purpose</h2>
+                    <p class="stories-descriptionX">Our platform honors the complexity of African experiences — the struggles, the triumphs, and everything in between. We believe that one life, lived intentionally, creates ripples that touch countless others.</p>
+                    <p class="stories-descriptionX">Here, we don't sell solutions. We share journeys. We create space for the questions that matter and the conversations that heal.</p>
+                    <div class="stories-actionsX">
+                        <button class="cta-buttonX">More Stories</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Content Section -->
+    <section class="featuredX">
+        <div class="containerX">
+            <p class="section-labelX">Recent Reflections</p>
+            <h2 class="section-titleX">Featured Stories</h2>
+            <p class="section-subtitleX">Conversations and experiences that explore what it means to live with intention and purpose.</p>
+            
+            <div class="featured-gridX">
+                <article class="featured-cardX">
+                    <div class="featured-imageX">
+                        <img src="/assets/img/podcastlogo.png" alt="Community">
+                    </div>
+                    <div class="featured-contentX">
+                        <h3 class="featured-titleX">Ubuntu: We Are Because You Are</h3>
+                        <p class="featured-excerptX">Exploring the ancient African philosophy that reminds us our humanity is inextricably bound to others.</p>
+                        <a href="#" class="read-moreX">Watch Story →</a>
+                    </div>
+                </article>
+
+                <article class="featured-cardX">
+                    <div class="featured-imageX">
+                        <img src="/assets/img/podcastlogo.png" alt="Reflection">
+                    </div>
+                    <div class="featured-contentX">
+                        <h3 class="featured-titleX">The Courage to Begin Again</h3>
+                        <p class="featured-excerptX">A conversation about resilience, failure, and the quiet strength it takes to keep moving forward.</p>
+                        <a href="#" class="read-moreX">Watch Story →</a>
+                    </div>
+                </article>
+
+                <article class="featured-cardX">
+                    <div class="featured-imageX">
+                        <img src="/assets/img/podcastlogo.png" alt="Impact">
+                    </div>
+                    <div class="featured-contentX">
+                        <h3 class="featured-titleX">Finding Purpose in Service</h3>
+                        <p class="featured-excerptX">Real stories from those who discovered that their purpose was always in lifting others as they climb.</p>
+                        <a href="#" class="read-moreX">Watch Story →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="communityX">
+        <div class="containerX">
+            <div class="community-contentX">
+                <div class="community-textX">
+                    <h2 class="section-titleX">Join Our<br>Community</h2>
+                    <p class="community-descriptionX">Be part of a space where African stories are honored, where reflection is valued, and where one life lived intentionally inspires many others.</p>
+                    
+                    <div class="community-statsX">
+                        <div class="statX">
+                            <div class="stat-iconX"></div>
+                            <div class="stat-contentX">
+                                <p class="stat-numberX">50+</p>
+                                <p class="stat-labelX">Stories Shared</p>
+                            </div>
+                        </div>
+                        <div class="statX">
+                            <div class="stat-iconX"></div>
+                            <div class="stat-contentX">
+                                <p class="stat-numberX">15</p>
+                                <p class="stat-labelX">African Countries</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="community-visualX">
+                    <div class="africa-mapX">
+                        <img src="/assets/img/found3.png" alt="Global community map">
+                    </div>
+                    <div class="dots-pattern-2X"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  </main>
+
+   <footer id="footer" class="footer">
+
+    
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename" style="color:#410a0a">One Life</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p style="color:#fff">A108 Adam Street</p>
+            <p style="color:#fff"> New York, NY 535022</p>
+            <p class="mt-3" style="color:#fff"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p style="color:#fff"><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 style="color:#410a0a">Useful Links</h4>
+          <ul >
+            <li ><i class="bi bi-chevron-right"></i> <a href="#" style="color:#410a0a">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#" style="color:#410a0a">Podcasts</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#" style="color:#410a0a">Foundation</a></li>
+          </ul>
+        </div>
+
+        
+        <div class="col-lg-4 col-md-12">
+          <h4 style="color:#410a0a">Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x" style="color:#410a0a"></i></a>
+            <a href=""><i class="bi bi-facebook" style="color:#410a0a"></i></a>
+            <a href=""><i class="bi bi-instagram"style="color:#410a0a"></i></a>
+            <a href=""><i class="bi bi-linkedin" style="color:#410a0a"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p style="color:#410a0a">© <span>Copyright</span> <strong class="px-1 sitename">One Life</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon -->
+      </div>
+    </div>
+
+  </footer>
+  
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+      // Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Add scroll animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Observe elements for fade-in animation
+document.addEventListener('DOMContentLoaded', () => {
+    const animatedElements = document.querySelectorAll('.value-cardX, .featured-cardX, .statX');
+    
+    animatedElements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+});
+
+// Optional: Add parallax effect to decorative dots
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const dots = document.querySelectorAll('.dotX');
+    
+    dots.forEach((dot, index) => {
+        const speed = 0.5 + (index * 0.1);
+        dot.style.transform = `translateY(${scrolled * speed}px)`;
+    });
+});
+    </script>
+
+</body>
+
+</html>

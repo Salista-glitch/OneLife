@@ -1,0 +1,2037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>One Life Batanai Foundation</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/OL-icon.JPG" rel="icon">
+  <link href="assets/img/OL-icon.JPG" rel="one-life-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
+
+  <!-- =======================================================
+  * Template Name: eNno
+  * Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+   <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2d2d2d;
+    --accent-color: #d4a574;
+    --text-dark: #1a1a1a;
+    --text-light: #666;
+    --text-minutes: #b50635;
+    --tag-green: #035640;
+    --background-light: #f9f7f4;
+    --white: #ffffff;
+    --border-radius: 12px;
+    --nav-color: #5f687b;  /* The default color of the main navmenu links */
+  --nav-hover-color: #b50635; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #5f687b; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #10bc69; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--white);
+}
+
+.header {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 15px 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+.header .logo {
+  line-height: 1;
+}
+
+.header .logo img {
+  max-height: 96px;
+  margin-right: 8px;
+}
+
+.header .logo h1 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.header .btn-getstarted,
+.header .btn-getstarted:focus {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 14px;
+  padding: 8px 25px;
+  margin: 0 0 0 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.header .btn-getstarted:hover,
+.header .btn-getstarted:focus:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+@media (max-width: 1200px) {
+  .header .logo {
+    order: 1;
+  }
+
+  .header .btn-getstarted {
+    order: 2;
+    margin: 0 15px 0 0;
+    padding: 6px 15px;
+  }
+
+  .header .navmenu {
+    order: 3;
+  }
+}
+
+.scrolled .header {
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Navmenu - Desktop */
+@media (min-width: 1200px) {
+  .navmenu {
+    flex: 1;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .navmenu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+   
+    
+  }
+
+  .navmenu li {
+    position: relative;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    color: var(--nav-color);
+    padding: 18px 15px;
+    font-size: 16px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+
+  .navmenu a i,
+  .navmenu a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    transition: 0.3s;
+  }
+
+  .navmenu li:last-child a {
+    padding-right: 0;
+  }
+
+  .navmenu li:hover>a,
+  .navmenu .active,
+  .navmenu .active:focus {
+    color: var(--nav-hover-color);
+  }
+
+  .navmenu .dropdown ul {
+    margin: 0;
+    padding: 10px 0;
+    background: var(--nav-dropdown-background-color);
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    left: 14px;
+    top: 130%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 4px;
+    z-index: 99;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .navmenu .dropdown ul li {
+    min-width: 200px;
+  }
+
+  .navmenu .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: none;
+    color: var(--nav-dropdown-color);
+  }
+
+  .navmenu .dropdown ul a i {
+    font-size: 12px;
+  }
+
+  .navmenu .dropdown ul a:hover,
+  .navmenu .dropdown ul .active:hover,
+  .navmenu .dropdown ul li:hover>a {
+    color: var(--nav-dropdown-hover-color);
+  }
+
+  .navmenu .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+
+  .navmenu .dropdown .dropdown ul {
+    top: 0;
+    left: -90%;
+    visibility: hidden;
+  }
+
+  .navmenu .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: -100%;
+    visibility: visible;
+  }
+}
+
+/* Navmenu - Mobile */
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    color: var(--nav-color);
+    font-size: 28px;
+    line-height: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .navmenu {
+    padding: 0;
+    z-index: 9997;
+  }
+
+  .navmenu ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    inset: 60px 20px 20px 20px;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 6px;
+    background-color: var(--nav-mobile-background-color);
+    overflow-y: auto;
+    transition: 0.3s;
+    z-index: 9998;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    color: var(--nav-dropdown-color);
+    padding: 10px 20px;
+    font-family: var(--nav-font);
+    font-size: 17px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .navmenu a i,
+  .navmenu a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  }
+
+  .navmenu a i:hover,
+  .navmenu a:focus i:hover {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+  }
+
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu .active:focus {
+    color: var(--nav-dropdown-hover-color);
+  }
+
+  .navmenu .active i,
+  .navmenu .active:focus i {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    transform: rotate(180deg);
+  }
+
+  .navmenu .dropdown ul {
+    position: static;
+    display: none;
+    z-index: 99;
+    padding: 10px 0;
+    margin: 10px 20px;
+    background-color: var(--nav-dropdown-background-color);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    box-shadow: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navmenu .dropdown ul ul {
+    background-color: rgba(33, 37, 41, 0.1);
+  }
+
+  .navmenu .dropdown>.dropdown-active {
+    display: block;
+    background-color: rgba(33, 37, 41, 0.03);
+  }
+
+  .mobile-nav-active {
+    overflow: hidden;
+  }
+
+  .mobile-nav-active .mobile-nav-toggle {
+    color: #fff;
+    position: absolute;
+    font-size: 32px;
+    top: 15px;
+    right: 15px;
+    margin-right: 0;
+    z-index: 9999;
+  }
+
+  .mobile-nav-active .navmenu {
+    position: fixed;
+    overflow: hidden;
+    inset: 0;
+    background: rgba(33, 37, 41, 0.8);
+    transition: 0.3s;
+  }
+
+  .mobile-nav-active .navmenu>ul {
+    display: block;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.footer {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-size: 14px;
+  position: relative;
+}
+
+.footer .footer-newsletter {
+  background-color: color-mix(in srgb, var(--default-color), transparent 97%);
+  padding: 50px 0;
+}
+
+.footer .footer-newsletter h4 {
+  font-size: 24px;
+}
+
+.footer .footer-newsletter .newsletter-form {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 6px 8px;
+  position: relative;
+  border-radius: 4px;
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+
+.footer .footer-newsletter .newsletter-form:focus-within {
+  border-color: var(--accent-color);
+}
+
+.footer .footer-newsletter .newsletter-form input[type=email] {
+  border: 0;
+  padding: 4px;
+  width: 100%;
+  background-color: var(--surface-color);
+  color: var(--default-color);
+}
+
+.footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
+  outline: none;
+}
+
+.footer .footer-newsletter .newsletter-form input[type=submit] {
+  border: 0;
+  font-size: 16px;
+  padding: 0 20px;
+  margin: -7px -8px -7px 0;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  transition: 0.3s;
+  border-radius: 50px;
+}
+
+.footer .footer-newsletter .newsletter-form input[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.footer .footer-top {
+  padding-top: 50px;
+}
+
+.footer .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.footer h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer .footer-links {
+  margin-bottom: 30px;
+}
+
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-links ul i {
+  margin-right: 3px;
+  font-size: 12px;
+  line-height: 0;
+  color: var(--accent-color);
+}
+
+.footer .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-links ul a {
+  display: inline-block;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  line-height: 1;
+}
+
+.footer .footer-links ul a:hover {
+  color: var(--accent-color);
+}
+
+.footer .footer-about a {
+  color: var(--heading-color);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+
+.footer .footer-contact p {
+  margin-bottom: 5px;
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.footer .copyright p {
+  margin-bottom: 0;
+}
+
+.footer .credits {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background: var(--background-color);
+  transition: all 0.6s ease-out;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #ffffff;
+  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1.5s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: var(--contrast-color);
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(45, 45, 45, 0.9), rgba(90, 70, 50, 0.85)),
+                url('/assets/img/ngoma.PNG') center/cover;
+    color: var(--white);
+    padding: 80px 20px 120px;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 900px;
+    animation: fadeInUp 1s ease-out;
+    margin-top: 0%;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    margin-top: -70px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 16px 48px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 165, 116, 0.4);
+    background-color: #c29563;
+}
+.topics-headingB {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.highlightB {
+  color: #b50635;
+}
+
+.platform-logos {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+   
+}
+
+.platform-label {
+    display: block;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.logo-item:hover {
+    opacity: 1;
+}
+
+.logo-item svg {
+    width: 28px;
+    height: 28px;
+}
+
+.logo-item span {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* Featured Section */
+.featured-section {
+    padding: 80px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.story-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+    overflow: hidden;
+    background: var(--background-light);
+}
+
+.card-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.story-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--text-minutes);
+    color: var(--white);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.card-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    padding: 20px 20px 10px;
+    line-height: 1.4;
+    color: var(--text-dark);
+}
+
+.card-meta {
+    color: var(--text-minutes);
+    padding: 0 20px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Mission Section */
+.mission-section {
+    background: var(--background-light);
+    padding: 100px 20px;
+}
+
+.mission-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.mission-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    color: var(--text-dark);
+}
+
+.mission-description {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 35px;
+}
+
+.secondary-button {
+    background: var(--text-minutes);
+    border: none;
+    color: #fff;
+    padding: 14px 40px;
+    
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.secondary-button:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.available-on {
+    margin-top: 40px;
+}
+
+.available-on p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.platform-icons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.platform-icons span {
+    padding: 8px 16px;
+    background: var(--white);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.mission-visual {
+    position: relative;
+    height: 600px;
+}
+
+.mission-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.stats-box {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    background: var(--white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 5px;
+}
+
+.community-avatars {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.community-avatars img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    margin-left: -10px;
+}
+
+.community-avatars img:first-child {
+    margin-left: 0;
+}
+
+.community-avatars span {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+/* Storytellers Section */
+.storytellers-section {
+    padding: 100px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.storytellers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.storyteller-card {
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    height: 400px;
+}
+
+.storyteller-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.storyteller-card:hover img {
+    transform: scale(1.1);
+}
+
+.storyteller-card h3 {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.storyteller-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.storytellers-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.storytellers-content h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 25px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.storytellers-content p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 35px;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background: var(--primary-color);
+    padding: 100px 20px;
+    color: var(--white);
+}
+
+.newsletter-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.newsletter-content p {
+    font-size: 1.15rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+ .britt{
+	color:rgb(61, 46, 36);
+    font-family: 'Poppins' ,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+	 vertical-align: top;
+	 overflow: hidden;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 18px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 18px 40px;
+    background: var(--text-minutes);
+    color: var(--white);
+    border: none;
+    
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.newsletter-form button:hover {
+    background: #c29563;
+    transform: translateY(-2px);
+}
+
+/* Join Section */
+.join-section {
+    padding: 100px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.join-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.join-text h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.join-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+.join-visual {
+    height: 400px;
+    width : 260px;
+}
+
+.join-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        /* fills container cleanly */
+    object-position: top;     /* START from top, not center */
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.join-form {
+    background: var(--background-light);
+    padding: 60px;
+    border-radius: var(--border-radius);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.engagement-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select {
+    padding: 16px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background: var(--white);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--accent-color);
+}
+
+.form-submit {
+    padding: 18px;
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.form-submit:hover {
+    background: #1a1a1a;
+    transform: translateY(-2px);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background: var(--background-light);
+    padding: 100px 20px;
+}
+
+.testimonials-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.testimonials-tag {
+    display: inline-block;
+    background: var(--tag-green);
+    color: var(--white);
+    padding: 8px 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.testimonials-header h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.testimonials-header p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto 40px;
+}
+
+.testimonial-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-author h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 3px;
+}
+
+.testimonial-author p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.testimonial-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot.active {
+    background: var(--accent-color);
+}
+
+/* Latest Section */
+.latest-section {
+    padding: 100px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.latest-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.latest-header h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.latest-header p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .mission-content,
+    .join-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .mission-visual {
+        height: 400px;
+    }
+
+    .stats-box {
+        position: static;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 80vh;
+        padding: 60px 20px 100px;
+    }
+
+    .platform-logos {
+        bottom: 20px;
+    }
+
+    .logos {
+        gap: 20px;
+    }
+
+    .logo-item svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .featured-section,
+    .storytellers-section,
+    .join-section,
+    .latest-section {
+        padding: 60px 20px;
+    }
+
+    .mission-section,
+    .newsletter-section,
+    .testimonials-section {
+        padding: 80px 20px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .storytellers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .storyteller-card {
+        height: 300px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+
+    .join-form {
+        padding: 40px 25px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .section-title,
+    .mission-title,
+    .storytellers-content h2,
+    .newsletter-content h2,
+    .join-text h2,
+    .testimonials-header h2,
+    .latest-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .platform-logos {
+        padding: 0 15px;
+    }
+
+    .logos {
+        gap: 15px;
+    }
+
+    .logo-item {
+        font-size: 0.7rem;
+    }
+}
+/* Pulsating Play Button
+------------------------------*/
+.pulsating-play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(var(--nav-hover-color) 50%, color-mix(in srgb, var(--nav-hover-color), transparent 75%) 52%);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  overflow: hidden;
+}
+
+.pulsating-play-btn:before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
+  animation: pulsate-play-btn 2s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid color-mix(in srgb, var(--nav-hover-color), transparent 30%);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+.pulsating-play-btn:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.pulsating-play-btn:hover:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  animation: none;
+  border-radius: 0;
+}
+
+.pulsating-play-btn:hover:after {
+  border-left: 15px solid var(--nav-hover-color);
+  transform: scale(20);
+}
+
+@keyframes pulsate-play-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+    </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top" style="background-image: url('/assets/img/header-landing.PNG');">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center ">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/onelifeicon-removebg-preview.png" alt=""> 
+       <!--- <h1 class="sitename">One life </h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" >About</a></li>
+          <li><a href="podcast.html" class="active">Podcast</a></li>
+          <li><a href="foundation.html">Foundation</a></li>
+
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      
+    </div>
+  </header>
+
+  <main class="main">
+
+      <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">One Life, <br>Many Stories</h1>
+            <p class="hero-subtitle">Real conversations. African voices. Stories that matter. <br>Exploring meaning, growth, and purpose through authentic storytelling.</p>
+            <button class="cta-button">Listen Now</button>
+        </div>
+        <div class="platform-logos">
+            <span class="platform-label">Listen & Watch On</span>
+            <div class="logos">
+                <div class="logo-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                    </svg>
+                    <span>Spotify</span>
+                </div>
+                <div class="logo-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23.994 12c0-6.628-5.372-12-11.994-12C5.372 0 0 5.372 0 12s5.372 12 12 12c6.622 0 11.994-5.372 11.994-12zM12 2.163c5.433 0 9.837 4.404 9.837 9.837S17.433 21.837 12 21.837 2.163 17.433 2.163 12 6.567 2.163 12 2.163zM8.1 12l4.95-4.95v3.3h3.3v3.3h-3.3v3.3L8.1 12z"/>
+                    </svg>
+                    <span>YouTube</span>
+                </div>
+                <div class="logo-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                    </svg>
+                    <span>TikTok</span>
+                </div>
+                <div class="logo-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121L7.906 13.11l-2.97-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.947z"/>
+                    </svg>
+                    <span>Podcast</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Stories Section -->
+    <section class="featured-section">
+        <h2 class="section-title">Stories to<span class="highlightB"> reflect On</span></h2>
+        <div class="card-grid">
+            <div class="story-card">
+                <div class="card-image">
+                    <img src="/assets/img/podcastlog.png" alt="Story 1" style="opacity: 0.75;">
+                </div>
+                <h3 class="card-title">What My Grandmother Teaching Me About Purpose</h3>
+                <p class="card-meta">42 minutes</p>
+            </div>
+            <div class="story-card">
+                <div class="card-image">
+                    <img src="/assets/img/podcastlog.png" alt="Story 2" style="opacity: 0.75;">
+                </div>
+                <h3 class="card-title">Finding Meaning in the In-Between</h3>
+                <p class="card-meta">28 minutes</p>
+            </div>
+            <div class="story-card">
+                <div class="card-image">
+                    <img src="/assets/img/podcastlog.png" alt="Story 3" style="opacity: 0.75;">
+                </div>
+                <h3 class="card-title">The Stories We Carry Forward</h3>
+                <p class="card-meta">35 minutes</p>
+            </div>
+            <div class="story-card">
+                <div class="card-image">
+                    <img src="/assets/img/podcastlog.png" alt="Story 4" style="opacity: 0.75;">
+                </div>
+                <h3 class="card-title">Living Intentionally in Modern Africa</h3>
+                <p class="card-meta">15 minutes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats & Mission Section -->
+    <section class="mission-section">
+        <div class="mission-content">
+            <div class="mission-text">
+                <h2 class="mission-title">Stories That <br>Resonate, <br>Reflect, <br>Transform</h2>
+                <p class="britt">We don't chase trends. We create space for authentic conversations about what it means to live one life with intention, purpose, and impact.</p>
+                <button class="secondary-button">Explore Stories</button>
+                <div class="available-on">
+                    <p>Available on</p>
+                    <div class="platform-icons">
+                        <span>Spotify</span>
+                        <span>YouTube</span>
+                        <span>TikTok</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mission-visual">
+                <img src="/assets/img/batanaipod.png" alt="Podcast microphone">
+                <div class="stats-box">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Stories Shared</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10k+</span>
+                        <span class="stat-label">Listeners</span>
+                    </div>
+                    <div class="community-avatars">
+                        <img src="/assets/img/blackguy.jpg" alt="Community">
+                        <img src="/assets/img/blackwoman.jpg" alt="Community">
+                        <img src="/assets/img/whitewoman.jpeg" alt="Community">
+                        <span>+More</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Storytellers Section -->
+    <section class="storytellers-section">
+        <div class="storytellers-grid">
+            <div class="storyteller-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="/assets/img/blackguy.jpg" alt="Storyteller 1" class="img-fluid">
+                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+                <h3>Authentic Voices</h3>
+            </div>
+            <div class="storyteller-card">
+                <img src="/assets/img/blackwoman.jpg" alt="Storyteller 2">
+                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+                <h3>Real Conversations</h3>
+            </div>
+            <div class="storyteller-card">
+                <img src="/assets/img/whitewoman.jpeg" alt="Storyteller 3">
+                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+                <h3>Meaningful Reflections</h3>
+            </div>
+        </div>
+        <!-- <div class="storytellers-content">
+            <h2>African Stories, <br>Universal Truths</h2>
+            <p>Every story we share comes from lived experience. We explore the questions that matter: What gives life meaning? How do we grow through struggle? What does it mean to live with purpose?</p>
+            <button class="cta-button">Join the Conversation</button>
+        </div> -->
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>Join the Conversation</h2>
+            <p >If you have a story, an idea, or a voice that belongs here, we’d love to hear from you.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <!-- <input type="email" placeholder="Your email address" required> -->
+                <button type="submit">Get in touch</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Join Community Section -->
+    <section class="join-section">
+        <div class="join-content">
+            <div class="join-text">
+                <h2>Why Listen? <br>Join a Community <br>of <span style="color:#035640">Intentional Living</span></h2>
+                <p class="britt">This isn't just about consuming content. It's about being part of a movement of people committed to living one life with purpose, sharing stories that matter, and growing together.</p>
+                <p class="britt">Whether you're navigating your own journey, seeking inspiration, or simply curious about authentic African perspectives, there's a place for you here.</p>
+            </div>
+            <div class="join-visual">
+                <img src="/assets/img/high1.PNG" alt="Community conversation">
+            </div>
+        </div>
+        <div class="join-form">
+            <form class="engagement-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="reason">What brings you here?</label>
+                    <select id="reason" required>
+                        <option value="">Select an option</option>
+                        <option value="stories">I want to hear authentic stories</option>
+                        <option value="grow">I'm seeking growth and meaning</option>
+                        <option value="share">I have a story to share</option>
+                        <option value="connect">I want to connect with others</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email-join">Your Email</label>
+                    <input type="email" id="email-join" placeholder="Enter your email" required>
+                </div>
+                <button type="submit" class="form-submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="testimonials-header">
+            <span class="testimonials-tag">Hear From Our Community</span>
+            <h2>Voices of Impact: <br>What Listeners Are Saying</h2>
+            <p class="britt">These stories have touched lives across Africa and beyond. Here's what people are reflecting on.</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="testimonial-text">"One Life Batanai Foundation helped me realize that my story matters. The conversations here are raw, honest, and deeply meaningful. This is the kind of content that changes lives."</p>
+                <div class="testimonial-author">
+                    <img src="/assets/img/blackguy.jpg" alt="Listener">
+                    <div>
+                        <h4>Tendai M.</h4>
+                        <p>Harare, Zimbabwe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Finally, a platform that celebrates African stories without filter or pretense. Every episode feels like sitting with a wise friend who understands the journey."</p>
+                <div class="testimonial-author">
+                    <img src="/assets/img/blackwoman.jpg" alt="Listener">
+                    <div>
+                        <h4>Kwame A.</h4>
+                        <p>Accra, Ghana</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"This isn't just another podcast. It's a movement. The stories shared here have helped me find clarity, purpose, and connection in my own life."</p>
+                <div class="testimonial-author">
+                    <img src="/assets/img/whitewoman.jpeg" alt="Listener">
+                    <div>
+                        <h4>Amara N.</h4>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- Latest Content Section -->
+    <section class="latest-section">
+        <div class="latest-header">
+            <h2>Explore Recent Conversations: <br>Latest Stories, <span style="color:#035640">Always Meaningful</span></h2>
+            <p class="britt">Fresh perspectives, timeless wisdom. Here are our most recent stories.</p>
+        </div>
+        <div class="card-grid">
+            <div class="story-card">
+                <div class="card-image">
+                    <img src="/assets/img/podcastlogo.png" alt="Latest story 1">
+                    <span class="card-badge">New</span>
+                </div>
+                <h3 class="card-title">Building Dreams: A Journey of African Entrepreneurship</h3>
+                <p class="card-meta">38 minutes</p>
+            </div>
+            <div class="story-card">
+                <div class="card-image">
+                    <img src="/assets/img/podcastlogo.png" alt="Latest story 2">
+                    <span class="card-badge">New</span>
+                </div>
+                <h3 class="card-title">The Wisdom Passed Down: Family Stories That Shape Us</h3>
+                <p class="card-meta">45 minutes</p>
+            </div>
+            <div class="story-card">
+                <div class="card-image">
+                    <img src="/assets/img/podcastlogo.png" alt="Latest story 3">
+                    <span class="card-badge">New</span>
+                </div>
+                <h3 class="card-title">Honoring Roots While Creating Future</h3>
+                <p class="card-meta"> 32 minutes</p>
+            </div>
+            <div class="story-card">
+                <div class="card-image">
+                    <img src="/assets/img/podcastlogo.png" alt="Latest story 4">
+                    <span class="card-badge">New</span>
+                </div>
+                <h3 class="card-title">The Practice of Daily Intention</h3>
+                <p class="card-meta">20 minutes</p>
+            </div>
+        </div>
+    </section>
+  </main>
+
+ <footer id="footer" class="footer" style="background-image: url('assets/img/found1.png'); background-repeat: no-repeat;background-size: cover;">
+
+    
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename" style="color:#410a0a">One Life</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p style="color:#fff">A108 Adam Street</p>
+            <p style="color:#fff"> New York, NY 535022</p>
+            <p class="mt-3" style="color:#fff"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p style="color:#fff"><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 style="color:#410a0a">Useful Links</h4>
+          <ul >
+            <li ><i class="bi bi-chevron-right"></i> <a href="#" style="color:#410a0a">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#" style="color:#410a0a">Podcasts</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#" style="color:#410a0a">Foundation</a></li>
+          </ul>
+        </div>
+
+        
+        <div class="col-lg-4 col-md-12">
+          <h4 style="color:#410a0a">Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x" style="color:#410a0a"></i></a>
+            <a href=""><i class="bi bi-facebook" style="color:#410a0a"></i></a>
+            <a href=""><i class="bi bi-instagram"style="color:#410a0a"></i></a>
+            <a href=""><i class="bi bi-linkedin" style="color:#410a0a"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p style="color:#410a0a">© <span>Copyright</span> <strong class="px-1 sitename">One Life</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+     
+      // Newsletter Form Submission
+document.getElementById('newsletterForm')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = this.querySelector('input[type="email"]').value;
+    
+    // Simulate form submission
+    alert(`Thank you for subscribing! We'll send meaningful stories to ${email}`);
+    this.reset();
+});
+
+// Engagement Form Submission
+document.querySelector('.engagement-form')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    
+    // Simulate form submission
+    alert(`Welcome to the community, ${name}! We're excited to share stories with you.`);
+    this.reset();
+});
+
+// Smooth scroll for CTA buttons
+document.querySelectorAll('.cta-button, .secondary-button').forEach(button => {
+    button.addEventListener('click', function(e) {
+        // Only prevent default if it's a navigation button
+        if (this.textContent === 'Explore Stories') {
+            e.preventDefault();
+            document.querySelector('.featured-section').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        } else if (this.textContent === 'Join the Conversation') {
+            e.preventDefault();
+            document.querySelector('.join-section').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+    });
+});
+
+// Testimonial Dots Navigation (Simple Implementation)
+document.querySelectorAll('.testimonial-dots .dot').forEach((dot, index) => {
+    dot.addEventListener('click', function() {
+        // Remove active class from all dots
+        document.querySelectorAll('.testimonial-dots .dot').forEach(d => {
+            d.classList.remove('active');
+        });
+        
+        // Add active class to clicked dot
+        this.classList.add('active');
+        
+        // In a real implementation, this would change the visible testimonials
+        console.log(`Showing testimonial set ${index + 1}`);
+    });
+});
+
+// Intersection Observer for fade-in animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Apply fade-in to sections
+document.querySelectorAll('.story-card, .storyteller-card, .testimonial-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+});
+
+// Add hover effect sound feedback (optional - commented out by default)
+/*
+document.querySelectorAll('.story-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        // Could add subtle audio feedback here
+        console.log('Card hover');
+    });
+}); */
+
+  </script>
+
+</body>
+
+</html>
